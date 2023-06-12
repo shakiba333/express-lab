@@ -1,0 +1,21 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>All Students</h1>
+
+        <ul class="list-group">
+            <% students.forEach(function(s) { %>
+                <li class="list-group-item">
+                    <%= s.name %>
+                        <a class="list-group-link" href="/student/<%= s.id %>">
+                            Click for Details for Student
+                        </a>
+                </li>
+                <% }); %>
+        </ul>
+    </div>
+</body>
